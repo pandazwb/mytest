@@ -18,7 +18,7 @@ SIGNER=
 VERSION=
 commit=false
 url=https://github.com/btnproject/btn
-ethurl=https://github.com/btnproject/cpp-eth-btn
+ethurl=https://github.com/btnproject/cpp-eth-qtum
 proc=2
 mem=2000
 lxc=true
@@ -266,7 +266,7 @@ then
         echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit btn=${COMMIT},cpp-eth-btn=develop --url btn=${url},cpp-eth-btn=${ethurl} ../btn/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit btn=${COMMIT},cpp-eth-qtum=develop --url btn=${url},cpp-eth-qtum=${ethurl} ../btn/contrib/gitian-descriptors/gitian-linux.yml
 	    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../btn/contrib/gitian-descriptors/gitian-linux.yml
 	    mv build/out/btn-*.tar.gz build/out/src/btn-*.tar.gz ../btn-binaries/${VERSION}
 	fi
@@ -276,7 +276,7 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit btn=${COMMIT},cpp-eth-btn=develop --url btn=${url},cpp-eth-btn=${ethurl} ../btn/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit btn=${COMMIT},cpp-eth-qtum=develop --url btn=${url},cpp-eth-qtum=${ethurl} ../btn/contrib/gitian-descriptors/gitian-win.yml
 	    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../btn/contrib/gitian-descriptors/gitian-win.yml
 	    mv build/out/btn-*-win-unsigned.tar.gz inputs/btn-win-unsigned.tar.gz
 	    mv build/out/btn-*.zip build/out/btn-*.exe ../btn-binaries/${VERSION}
@@ -287,7 +287,7 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit btn=${COMMIT},cpp-eth-btn=develop --url btn=${url},cpp-eth-btn=${ethurl} ../btn/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit btn=${COMMIT},cpp-eth-qtum=develop --url btn=${url},cpp-eth-qtum=${ethurl} ../btn/contrib/gitian-descriptors/gitian-osx.yml
 	    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../btn/contrib/gitian-descriptors/gitian-osx.yml
 	    mv build/out/btn-*-osx-unsigned.tar.gz inputs/btn-osx-unsigned.tar.gz
 	    mv build/out/btn-*.tar.gz build/out/btn-*.dmg ../btn-binaries/${VERSION}

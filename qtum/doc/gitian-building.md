@@ -408,7 +408,7 @@ COMMIT=2014_03_windows_unicode_path
 ./bin/gbuild --commit btn=${COMMIT} --url btn=${URL} ../btn/contrib/gitian-descriptors/gitian-win.yml
 ./bin/gbuild --commit btn=${COMMIT} --url btn=${URL} ../btn/contrib/gitian-descriptors/gitian-osx.yml
 # if wanting to use a different version of eth-cpp-btn:
-./bin/gbuild --commit btn=${COMMIT},cpp-eth-btn=${ETHCOMMIT} --url btn=${URL},cpp-eth-btn=${ETHURL} ../btn/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit btn=${COMMIT},cpp-eth-qtum=${ETHCOMMIT} --url btn=${URL},cpp-eth-qtum=${ETHURL} ../btn/contrib/gitian-descriptors/gitian-linux.yml
 ```
 
 Building fully offline

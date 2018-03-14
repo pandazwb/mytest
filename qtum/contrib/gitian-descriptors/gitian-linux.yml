@@ -35,13 +35,13 @@ packages:
 remotes:
 - "url": "https://github.com/btnproject/btn.git"
   "dir": "btn"
-- "url": "https://github.com/btnproject/cpp-eth-btn.git"
-  "dir": "cpp-eth-btn"
+- "url": "https://github.com/btnproject/cpp-eth-qtum.git"
+  "dir": "cpp-eth-qtum"
 files: []
 script: |
   #this is a hack since gitian has no natural support for submodules
   #make sure this file exists... 
-  cp -r cpp-eth-btn/* btn/src/cpp-ethereum
+  cp -r cpp-eth-qtum/* btn/src/cpp-ethereum
   cat btn/src/cpp-ethereum/utils/libscrypt/b64.c 
 
   WRAP_DIR=$HOME/wrapped

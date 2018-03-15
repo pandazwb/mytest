@@ -10,6 +10,7 @@ Main Window CSS
 QMainWindow{
     background-color: #bcbcbc;
     border: 0px solid transparent;
+    background-image: url(":/styles/app-icons/bg");
     background-position: bottom left;
     background-repeat: no-repeat;
 }
@@ -29,7 +30,7 @@ QMainWindow .QFrame#frameBalances,
 #frameOtherTokens, 
 #frameRecentTransactions,
 #frameRequest{
-    background-color: #f4f4f4;
+    background-color: #999999;
 }
 QMainWindow .QFrame#frameContract{
     background-color: #2a2a2a;
@@ -51,7 +52,7 @@ QDialog{
     background-color: #d1d1d1;
 }
 QLabel{
-    color: #ffffff;
+    color: #000000;
 }
 QLabel::disabled{
     color: rgba(255, 255, 255, 10%);
@@ -91,28 +92,28 @@ QLineEdit::disabled{
     color: rgba(150, 150, 150, 10%);
 }
 QAbstractItemView#autoCompleterPopup{
-    background-color: #f4f4f4;
+    background-color: #999999;
     border: none;
     padding: 4px;
 }
 QAbstractItemView#autoCompleterPopup::item{
     border: none;
     border-radius: 10px;
-    background-color: #f4f4f4;
-    color: #ffffff;
+    background-color: #999999;
+    color: #000000;
     padding: 4px;
     padding-left: 10px;
 }
 QAbstractItemView#autoCompleterPopup::item:selected {
     background-color: #545454;
-    color: #ffffff;
+    color: #000000;
     padding: 4px;
 }
 /*--------------------------------------------
 List Viev CSS
 --------------------------------------------*/
 QListView {
-    background-color: #f4f4f4;
+    background-color: #999999;
     border: none;
 }
 /*--------------------------------------------
@@ -122,7 +123,7 @@ QComboBox {
     border: 1px solid #5a5a5d;
     border-radius: 12px;
     background-color: #2a2a2a;
-    color: #ffffff;
+    color: #000000;
     padding: 4px;
     padding-left: 10px;
     padding-right: 8px;
@@ -145,21 +146,21 @@ QComboBox:down-arrow {
 QComboBox QAbstractItemView::item {
     border: none;
     border-radius: 10px;
-    background-color: #f4f4f4;
-    color: #ffffff;
+    background-color: #999999;
+    color: #000000;
     padding: 4px;
     padding-left: 10px;
 }
 QComboBox QAbstractItemView::item:selected {
-    background-color: #4857e1;
-    color: #ffffff;
+    background-color: #545454;
+    color: #000000;
     padding: 4px;
 }
 QComboBox QAbstractItemView{
-    background-color: #f4f4f4;
+    background-color: #999999;
     border: none;
-    border-top: 1px solid #727272;
-    border-bottom: 1px solid #727272;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
     border-radius: 10px;
     padding: 4px;
     margin-top: 3px;
@@ -182,10 +183,10 @@ QGroupBox
 {
     border: 0px solid transparent; 
     margin-top: 20px;
-    background-color: #f4f4f4;
+    background-color: #999999;
 }
 QGroupBox::title {
-    color: #ffffff;
+    color: #000000;
     subcontrol-position: top left;
     left: -3px;
     padding: -40px 3px 0px 3px;
@@ -353,7 +354,7 @@ QScrollBar:vertical {
 }
 QScrollBar::handle:vertical {
     border: none;
-    background: #f4f4f4;
+    background: #999999;
     border-radius: 4px;
     min-height: 35px;
 }
@@ -370,7 +371,7 @@ QTextEdit QScrollBar:vertical {
 }
 QTextEdit QScrollBar::handle:vertical {
     border: none;
-    background: #f4f4f4;
+    background: #999999;
     border-radius: 5px;
     min-height: 30px;
 }
@@ -387,7 +388,7 @@ QPlainTextEdit QScrollBar:vertical {
 }
 QPlainTextEdit QScrollBar::handle:vertical {
     border: none;
-    background: #f4f4f4;
+    background: #999999;
     border-radius: 5px;
     min-height: 30px;
 }
@@ -402,7 +403,7 @@ QComboBox QScrollBar:vertical {
 }
 QComboBox QScrollBar::handle:vertical {
     border: none;
-    background: #f4f4f4;
+    background: #999999;
     border-radius: 4px;
     min-height: 35px;
 }
@@ -438,7 +439,7 @@ QScrollBar:horizontal {
 }
 QScrollBar::handle:horizontal {
     border: none;
-    background: #f4f4f4;
+    background: #999999;
     border-radius: 4px;
     min-width: 30px;
 }
@@ -456,7 +457,7 @@ QHeaderView{
 QHeaderView:section{
     padding: 6px 20px 6px 6px;
     border: none;
-    background-color: #f4f4f4;
+    background-color: #999999;
 }
 QHeaderView::down-arrow {
     image: url(":/styles/app-icons/down_arrow");
@@ -474,7 +475,7 @@ QHeaderView::up-arrow {
 }
 QTableView{
     color: #C5C5C5;
-    background-color: #f4f4f4;
+    background-color: #999999;
     alternate-background-color: #393939;
     border: none;
     font: normal;
@@ -572,8 +573,8 @@ QStatusBar QLabel::disabled{
 Progress Bar CSS
 --------------------------------------------*/
 QProgressBar {
-    background-color: #f4f4f4;
-    border: 1px solid #f4f4f4;
+    background-color: #999999;
+    border: 1px solid #999999;
     font: 10pt;
     color: white;
     border-radius: 0px;
@@ -613,7 +614,7 @@ QTabBar::tab:disabled {
 QTabWidget::pane {
     border: none;
     border-top: none;
-    background-color: #f4f4f4;
+    background-color: #999999;
 }
 TitleBar QTabBar::tab {
     padding: 5px 10px;
@@ -671,7 +672,7 @@ QCheckBox{
     outline-style: none;
 }
 QCheckBox:hover, QCheckBox:checked {
-    color: #ffffff;
+    color: #000000;
 }
 QCheckBox:disabled {
     color: rgba(255, 255, 255, 10%);
@@ -715,7 +716,7 @@ QRadioButton{
     outline-style: none;
 }
 QRadioButton:hover, QRadioButton:checked {
-    color: #ffffff;
+    color: #000000;
 }
 QRadioButton:disabled {
     color: rgba(255, 255, 255, 10%);
@@ -750,7 +751,7 @@ QWidget#buttonsContainer {
 }
 QWidget#buttonsContainerWhite,
 #buttonsContainerWhite_ {
-    background: #ffffff;
+    background: #000000;
 }
 QWidget#ReceiveRequestDialog {
     background: #d1d1d1;
@@ -815,7 +816,7 @@ QScrollArea {
     border:none;
 }
 QWidget#scrollAreaWidgetContents{
-    background: #f4f4f4;
+    background: #999999;
 }
 .ABIFunctionField{
 	background: transparent;
@@ -841,7 +842,7 @@ QToolButton {
 	border: none;
 }
 QToolButton::hover{
-	background-color: rgba(00, 89, 92, 20%);
+	background-color: rgba(89, 89, 92, 20%);
 	border-top: 1px solid #2c2c2c;
 	border-bottom: 1px solid #2c2c2c;
 	padding-top: 5px;
@@ -893,7 +894,7 @@ QCalendarWidget QAbstractItemView
 {
     background-color: #373535;
     alternate-background-color: #2E2C2C;
-    color: #ffffff;
+    color: #000000;
     padding-bottom:-1px;
 }
 QCalendarWidget QAbstractItemView:disabled {

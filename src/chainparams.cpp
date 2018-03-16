@@ -131,7 +131,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x564c7c238abdf2ee09bed23c1822e88a8f13f2dfe6754d8fdd5869cef4338923"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        //vSeeds.push_back(CDNSSeedData("btn3.dynu.net", "btn3.dynu.net", false)); // Btn mainnet
+        vSeeds.push_back(CDNSSeedData("seed.btbase.vip", "seed2.btbase.vip", false)); // Btn mainnet
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
@@ -154,8 +154,8 @@ public:
         };
         consensus.nLastPOWBlock = 5000;
         consensus.nMPoSRewardRecipients = 10;
-        consensus.nFirstMPoSBlock = consensus.nLastPOWBlock + 
-                                    consensus.nMPoSRewardRecipients + 
+        consensus.nFirstMPoSBlock = consensus.nLastPOWBlock +
+                                    consensus.nMPoSRewardRecipients +
                                     COINBASE_MATURITY;
 
         consensus.nFixUTXOCacheHFHeight=0;
@@ -246,8 +246,8 @@ public:
 
         consensus.nLastPOWBlock = 5000;
         consensus.nMPoSRewardRecipients = 10;
-        consensus.nFirstMPoSBlock = consensus.nLastPOWBlock + 
-                                    consensus.nMPoSRewardRecipients + 
+        consensus.nFirstMPoSBlock = consensus.nLastPOWBlock +
+                                    consensus.nMPoSRewardRecipients +
                                     COINBASE_MATURITY;
 
         consensus.nFixUTXOCacheHFHeight=0;
@@ -368,4 +368,3 @@ void UpdateRegtestBIP9Parameters(Consensus::DeploymentPos d, int64_t nStartTime,
 {
     regTestParams.UpdateBIP9Parameters(d, nStartTime, nTimeout);
 }
- 

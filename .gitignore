@@ -123,3 +123,4 @@ contrib/devtools/split-debug.sh
 CMakeLists.txt
 cmake-build-debug/
 .vscode
+dist/

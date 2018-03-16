@@ -40,7 +40,7 @@ QTableView::item{
 }
 QTableView::item:selected{
     qproperty-showGrid: false;
-    background-color: #000000;
+    background-color: #ffffff;
     color: #5a5a5d;
 }
 

@@ -1,4 +1,4 @@
-qt/test/qt_test_test_qtum_qt-uritests.o: qt/test/uritests.cpp \
+qt/test/qt_test_test_btn_qt-uritests.o: qt/test/uritests.cpp \
   qt/test/uritests.h /usr/local/Cellar/qt/5.10.1/include/QtCore/QObject \
   /usr/local/Cellar/qt/5.10.1/include/QtCore/qobject.h \
   /usr/local/Cellar/qt/5.10.1/include/QtCore/qobjectdefs.h \

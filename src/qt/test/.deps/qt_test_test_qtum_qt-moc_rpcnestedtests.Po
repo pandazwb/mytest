@@ -1,4 +1,4 @@
-qt/test/qt_test_test_qtum_qt-moc_rpcnestedtests.o: \
+qt/test/qt_test_test_btn_qt-moc_rpcnestedtests.o: \
   qt/test/moc_rpcnestedtests.cpp qt/test/rpcnestedtests.h \
   /usr/local/Cellar/qt/5.10.1/include/QtCore/QObject \
   /usr/local/Cellar/qt/5.10.1/include/QtCore/qobject.h \
@@ -1455,7 +1455,7 @@ qt/test/qt_test_test_qtum_qt-moc_rpcnestedtests.o: \
   /usr/local/include/boost/thread/shared_lock_guard.hpp \
   /usr/local/include/boost/thread/recursive_mutex.hpp \
   /usr/local/include/boost/thread/pthread/recursive_mutex.hpp \
-  versionbits.h consensus/consensus.h qtum/qtumstate.h \
+  versionbits.h consensus/consensus.h btn/btnstate.h \
   cpp-ethereum/libethereum/State.h cpp-ethereum/libdevcore/RLP.h \
   cpp-ethereum/libdevcore/Exceptions.h \
   /usr/local/include/boost/exception/info.hpp \
@@ -1595,9 +1595,9 @@ qt/test/qt_test_test_qtum_qt-moc_rpcnestedtests.o: \
   cpp-ethereum/libethereum/Transaction.h \
   cpp-ethereum/libethcore/Transaction.h \
   cpp-ethereum/libethereum/TransactionReceipt.h \
-  cpp-ethereum/libethereum/GasPricer.h qtum/qtumtransaction.h \
+  cpp-ethereum/libethereum/GasPricer.h btn/btntransaction.h \
   cpp-ethereum/libethereum/Executive.h cpp-ethereum/libevm/VMFace.h \
-  cpp-ethereum/libethcore/SealEngine.h qtum/qtumDGP.h \
+  cpp-ethereum/libethcore/SealEngine.h btn/btnDGP.h \
   cpp-ethereum/libethereum/ChainParams.h \
   cpp-ethereum/libethashseal/Ethash.h \
   cpp-ethereum/libethereum/GenericFarm.h \
@@ -1613,7 +1613,7 @@ qt/test/qt_test_test_qtum_qt-moc_rpcnestedtests.o: \
   /usr/local/include/boost/variant/get.hpp \
   /usr/local/include/boost/variant/detail/element_index.hpp \
   /usr/local/include/boost/variant/visitor_ptr.hpp \
-  /usr/local/include/boost/variant/bad_visit.hpp qtum/storageresults.h \
+  /usr/local/include/boost/variant/bad_visit.hpp btn/storageresults.h \
   txmempool.h random.h crypto/chacha20.h \
   /usr/local/include/boost/multi_index_container.hpp \
   /usr/local/include/boost/detail/allocator_utilities.hpp \
@@ -4872,7 +4872,7 @@ versionbits.h:
 
 consensus/consensus.h:
 
-qtum/qtumstate.h:
+btn/btnstate.h:
 
 cpp-ethereum/libethereum/State.h:
 
@@ -5172,7 +5172,7 @@ cpp-ethereum/libethereum/TransactionReceipt.h:
 
 cpp-ethereum/libethereum/GasPricer.h:
 
-qtum/qtumtransaction.h:
+btn/btntransaction.h:
 
 cpp-ethereum/libethereum/Executive.h:
 
@@ -5180,7 +5180,7 @@ cpp-ethereum/libevm/VMFace.h:
 
 cpp-ethereum/libethcore/SealEngine.h:
 
-qtum/qtumDGP.h:
+btn/btnDGP.h:
 
 cpp-ethereum/libethereum/ChainParams.h:
 
@@ -5218,7 +5218,7 @@ script/interpreter.h:
 
 /usr/local/include/boost/variant/bad_visit.hpp:
 
-qtum/storageresults.h:
+btn/storageresults.h:
 
 txmempool.h:
 

@@ -10,11 +10,11 @@ SetCompressor /SOLID lzma
 !define URL https://btn.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/Users/chaiyu/dev/btn/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/Users/chaiyu/dev/btn/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/Users/chaiyu/btn_wallet_core/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/Users/chaiyu/btn_wallet_core/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/Users/chaiyu/dev/btn/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/Users/chaiyu/btn_wallet_core/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Btn Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\btn-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/Users/chaiyu/dev/btn/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/Users/chaiyu/btn_wallet_core/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /Users/chaiyu/dev/btn/btn-${VERSION}-win-setup.exe
+OutFile /Users/chaiyu/btn_wallet_core/btn-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Btn
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /Users/chaiyu/dev/btn/release/btn-qt
-    File /oname=COPYING.txt /Users/chaiyu/dev/btn/COPYING
-    File /oname=readme.txt /Users/chaiyu/dev/btn/doc/README_windows.txt
+    File /Users/chaiyu/btn_wallet_core/release/btn-qt
+    File /oname=COPYING.txt /Users/chaiyu/btn_wallet_core/COPYING
+    File /oname=readme.txt /Users/chaiyu/btn_wallet_core/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /Users/chaiyu/dev/btn/release/btnd
-    File /Users/chaiyu/dev/btn/release/btn-cli
+    File /Users/chaiyu/btn_wallet_core/release/btnd
+    File /Users/chaiyu/btn_wallet_core/release/btn-cli
     SetOutPath $INSTDIR\doc
-    File /r /Users/chaiyu/dev/btn/doc\*.*
+    File /r /Users/chaiyu/btn_wallet_core/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

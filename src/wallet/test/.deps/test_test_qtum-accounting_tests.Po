@@ -1,4 +1,4 @@
-wallet/test/test_test_qtum-accounting_tests.o: \
+wallet/test/test_test_btn-accounting_tests.o: \
   wallet/test/accounting_tests.cpp wallet/wallet.h amount.h serialize.h \
   compat/endian.h config/bitcoin-config.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdint.h \
@@ -1414,7 +1414,7 @@ wallet/test/test_test_qtum-accounting_tests.o: \
   leveldb/include/leveldb/status.h leveldb/include/leveldb/options.h \
   leveldb/include/leveldb/write_batch.h chain.h arith_uint256.h pow.h \
   validation.h protocol.h netaddress.h versionbits.h \
-  consensus/consensus.h qtum/qtumstate.h \
+  consensus/consensus.h btn/btnstate.h \
   cpp-ethereum/libethereum/State.h cpp-ethereum/libdevcore/RLP.h \
   cpp-ethereum/libdevcore/Exceptions.h \
   /usr/local/include/boost/exception/info_tuple.hpp \
@@ -1444,14 +1444,14 @@ wallet/test/test_test_qtum-accounting_tests.o: \
   cpp-ethereum/libethereum/Transaction.h \
   cpp-ethereum/libethcore/Transaction.h \
   cpp-ethereum/libethereum/TransactionReceipt.h \
-  cpp-ethereum/libethereum/GasPricer.h qtum/qtumtransaction.h \
+  cpp-ethereum/libethereum/GasPricer.h btn/btntransaction.h \
   cpp-ethereum/libethereum/Executive.h cpp-ethereum/libevm/VMFace.h \
-  cpp-ethereum/libethcore/SealEngine.h qtum/qtumDGP.h \
+  cpp-ethereum/libethcore/SealEngine.h btn/btnDGP.h \
   cpp-ethereum/libethereum/ChainParams.h \
   cpp-ethereum/libethashseal/Ethash.h \
   cpp-ethereum/libethereum/GenericFarm.h \
   cpp-ethereum/libethashseal/EthashProofOfWork.h \
-  cpp-ethereum/libethashseal/GenesisInfo.h qtum/storageresults.h \
+  cpp-ethereum/libethashseal/GenesisInfo.h btn/storageresults.h \
   txmempool.h random.h crypto/chacha20.h \
   /usr/local/include/boost/multi_index_container.hpp \
   /usr/local/include/boost/detail/allocator_utilities.hpp \
@@ -4728,7 +4728,7 @@ versionbits.h:
 
 consensus/consensus.h:
 
-qtum/qtumstate.h:
+btn/btnstate.h:
 
 cpp-ethereum/libethereum/State.h:
 
@@ -4808,7 +4808,7 @@ cpp-ethereum/libethereum/TransactionReceipt.h:
 
 cpp-ethereum/libethereum/GasPricer.h:
 
-qtum/qtumtransaction.h:
+btn/btntransaction.h:
 
 cpp-ethereum/libethereum/Executive.h:
 
@@ -4816,7 +4816,7 @@ cpp-ethereum/libevm/VMFace.h:
 
 cpp-ethereum/libethcore/SealEngine.h:
 
-qtum/qtumDGP.h:
+btn/btnDGP.h:
 
 cpp-ethereum/libethereum/ChainParams.h:
 
@@ -4828,7 +4828,7 @@ cpp-ethereum/libethashseal/EthashProofOfWork.h:
 
 cpp-ethereum/libethashseal/GenesisInfo.h:
 
-qtum/storageresults.h:
+btn/storageresults.h:
 
 txmempool.h:
 

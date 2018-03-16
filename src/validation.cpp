@@ -1374,14 +1374,14 @@ bool ReadFromDisk(CMutableTransaction& tx, CDiskTxPos& txindex, CBlockTreeDB& tx
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
     if(nHeight <= consensusParams.nLastPOWBlock)
-        return 20000 * COIN;
+        return 112000 * COIN;
 
     int halvings = (nHeight - consensusParams.nLastPOWBlock - 1) / consensusParams.nSubsidyHalvingInterval;
     // Force block reward to zero when right shift is undefined.
     if (halvings >= 7)
         return 0;
 
-    CAmount nSubsidy = 4 * COIN;
+    CAmount nSubsidy = 5 * COIN;
     // Subsidy is cut in half every 985500 blocks which will occur approximately every 4 years.
     nSubsidy >>= halvings;
     return nSubsidy;
@@ -2880,7 +2880,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     //only start checking this error after block 5000 and only on testnet and mainnet, not regtest
     if(pindex->nHeight > 5000 && !Params().GetConsensus().fPoSNoRetargeting) {
         //sanity check in case an exploit happens that allows new coins to be minted
-        if(pindex->nMoneySupply > (uint64_t)(100000000 + ((pindex->nHeight - 5000) * 4)) * COIN){
+        if(pindex->nMoneySupply > (uint64_t)(560000000 + ((pindex->nHeight - 5000) * 5)) * COIN){
             return state.DoS(100, error("ConnectBlock(): Unknown error caused actual money supply to exceed expected money supply"),
                              REJECT_INVALID, "incorrect-money-supply");
         }

@@ -1,5 +1,5 @@
-cpp-ethereum/libethashseal/genesis/libbitcoin_common_a-qtumMainNetwork.o: \
-  cpp-ethereum/libethashseal/genesis/qtumMainNetwork.cpp \
+cpp-ethereum/libethashseal/genesis/libbitcoin_common_a-btnMainNetwork.o: \
+  cpp-ethereum/libethashseal/genesis/btnMainNetwork.cpp \
   cpp-ethereum/libethashseal/genesis/../GenesisInfo.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

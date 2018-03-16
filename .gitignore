@@ -1,14 +1,14 @@
 *.tar.gz
 
 *.exe
-src/qtum-cli
-src/qtum-tx
-src/qtumd
-src/bench/bench_qtum
-src/qt/qtum-qt
-src/qt/test/test_qtum-qt
-src/test/test_qtum
-src/test/test_qtum_fuzzy
+src/btn-cli
+src/btn-tx
+src/btnd
+src/bench/bench_btn
+src/qt/btn-qt
+src/qt/test/test_btn-qt
+src/test/test_btn
+src/test/test_btn_fuzzy
 
 # autoreconf
 Makefile.in

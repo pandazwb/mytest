@@ -1,1 +1,0 @@
-btn/libbitcoin_server_a-btntransaction.o: btn/btntransaction.cpp

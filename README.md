@@ -12,7 +12,7 @@ The major features of the Btn network include:
 3. The Decentralized Governance Protocol is completely implemented and functional, which allows certain network parameters to be modified without a fork or other network disruption. This currently controls parameters like block size, gas prices, etc. 
 4. Uses the UTXO transaction model and is compatible with Bitcoin, allowing for existing tooling and workflows to be used with Btn. This allows for the infamous SPV protocol to be used which is ideal for light wallets on mobile phones and IoT devices.
 
-Note: Btn Core is considered beta software. We make no warranties or guarantees of its security or stability.
+Note: BTN Core is considered beta software. We make no warranties or guarantees of its security or stability.
 
 Btn Documentation and Usage Resources
 ---------------
@@ -60,12 +60,12 @@ Developer's Tools
   * https://github.com/btnproject/insight-api
 
 
-What is Btn Core?
+What is BTN Core?
 ------------------
 
-Btn Core is our primary mainnet wallet. It implements a full node and is capable of storing, validating, and distributing all history of the Btn network. Btn Core is considered the reference implementation for the Btn network. 
+BTN Core is our primary mainnet wallet. It implements a full node and is capable of storing, validating, and distributing all history of the Btn network. BTN Core is considered the reference implementation for the Btn network. 
 
-Btn Core currently implements the following:
+BTN Core currently implements the following:
 
 * Sending/Receiving Btn
 * Sending/Receiving QRC20 tokens on the Btn network
@@ -79,7 +79,7 @@ Btn Core currently implements the following:
 Alternative Wallets
 -------------------
 
-Btn Core uses a full node model, and thus requires downloading the entire blockchain. If you do not need the entire blockchain, and do not intend on developing smart contracts, it may be more ideal to use an alternative wallet such as one of our light wallets that can be synchronized in a matter of seconds. 
+BTN Core uses a full node model, and thus requires downloading the entire blockchain. If you do not need the entire blockchain, and do not intend on developing smart contracts, it may be more ideal to use an alternative wallet such as one of our light wallets that can be synchronized in a matter of seconds. 
 
 ### Btn Electrum
 
@@ -102,7 +102,7 @@ This light wallet runs in your Chrome browser as a browser extension. This walle
 How to install: https://ledger.zendesk.com/hc/en-us/articles/115003776913-How-to-install-and-use-Btn-with-Ledger
 
 
-Building Btn Core
+Building BTN Core
 ----------
 
 ### Build on Ubuntu
@@ -176,7 +176,7 @@ Then install [Homebrew](https://brew.sh).
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-#### Build Btn Core
+#### Build BTN Core
 
 1. Clone the btn source code and cd into `btn`
 

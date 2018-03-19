@@ -1,7 +1,7 @@
 Gitian building
 ================
 
-*Setup instructions for a Gitian build of Btn Core using a Debian VM or physical system.*
+*Setup instructions for a Gitian build of BTN Core using a Debian VM or physical system.*
 
 Gitian is the deterministic build process that is used to build the Btn
 Core executables. It provides a way to be reasonably sure that the
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing Gitian](#installing-gitian)
 - [Setting up the Gitian image](#setting-up-the-gitian-image)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Btn Core](#building-btn-core)
+- [Building BTN Core](#building-btn-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -353,10 +353,10 @@ manual intervention. Also optionally follow the next step: 'Seed the Gitian sour
 and offline git repositories' which will fetch the remaining files required for building
 offline.
 
-Building Btn Core
+Building BTN Core
 ----------------
 
-To build Btn Core (for Linux, OS X and Windows) just follow the steps under 'perform
+To build BTN Core (for Linux, OS X and Windows) just follow the steps under 'perform
 Gitian builds' in [doc/release-process.md](release-process.md#perform-gitian-builds) in the btn repository.
 
 This may take some time as it will build all the dependencies needed for each descriptor.

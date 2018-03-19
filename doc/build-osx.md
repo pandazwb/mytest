@@ -24,7 +24,7 @@ In case you want to build the disk image with `make deploy` (.dmg / optional), y
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Build Btn Core
+Build Build BTN Core
 ------------------------
 
 1. Clone the btn source code and cd into `btn`

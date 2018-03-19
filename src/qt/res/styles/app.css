@@ -168,7 +168,7 @@ QComboBox QAbstractItemView{
 }
 QComboBox::disabled {
     border: 1px solid rgba(59, 59, 59, 40%);
-    color: rgba(255, 255, 255, 10%);
+    color: #000000;
 }
 QComboBox:drop-down:disabled {
     border-left: 1px solid rgba(59, 59, 59, 40%);
@@ -299,7 +299,7 @@ QAbstractSpinBox::down-arrow:hover{
 }
 QAbstractSpinBox::disabled {
     border: 1px solid rgba(59, 59, 59, 40%);
-    color: rgba(189, 189, 189, 10%);
+    color: #000000;
 }
 QAbstractSpinBox::up-button:disabled {
     border-left: 1px solid rgba(59, 59, 59, 40%);

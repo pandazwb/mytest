@@ -514,7 +514,7 @@ QTextEdit {
     border: 1px solid #5a5a5d;
     border-radius: 12px;
     background-color: #d1d1d1;
-    color: #bdbdbd;
+    color: #000000;
     padding-left: 5px;
 }
 QTextEdit::hover:!read-only{
@@ -534,7 +534,7 @@ QPlainTextEdit {
     border: 1px solid #5a5a5d;
     border-radius: 12px;
     background-color: #d1d1d1;
-    color: #bdbdbd;
+    color: #000000;
     padding-left: 5px;
 }
 QPlainTextEdit::hover:!read-only{
